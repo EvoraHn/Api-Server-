@@ -1,0 +1,4 @@
+node js
+node -v
+npm install create-react-app -g
+npm install node-sass

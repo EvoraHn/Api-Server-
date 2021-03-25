@@ -1,0 +1,47 @@
+.App{
+    height: 100%;
+
+    .LogoContainer
+    {
+        text-align: center;
+        padding: 2rem;
+
+        .Logo
+        {
+            display: inline-block;
+            height: 6rem;
+            width: 10rem;
+            background-color: cornflowerblue;
+        }
+
+    }
+    .LoginFormContainer
+    {
+        text-align: center;
+        .LoginForm
+        {
+            display: inline-block;
+
+            .FieldContainer
+            {
+                padding: 0.6rem;
+                
+                input
+                {
+                    //border-radius: 4px;
+                    padding: 0.7rem;
+                    width: calc(100% - 1.9rem)
+                }
+
+                .Button
+                {
+                    background-color: cornflowerblue;
+                    color: cornsilk;
+                    padding: 1rem;
+                    border-radius: 4px;
+                }
+            }
+        }
+    }
+    
+}
