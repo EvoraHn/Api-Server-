@@ -1,20 +1,18 @@
-html
-{
+html{
     margin: 0px;
     padding: 0px;
     height: 100%;
     width: 100%;
-    font-size: 16px;//rem relativo a esto//escala si cambias aquí cambias toda la app
-    
-    body 
-    {
+    font-size: 16px;
+    font-family: sans-serif;
+
+    body{
         margin: 0px;
         padding: 0px;
         height: 100%;
         width: 100%;
 
-        #root
-        {
+        #root{
             margin: 0px;
             padding: 0px;
             height: 100%;

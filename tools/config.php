@@ -1,5 +1,7 @@
 <?php
 
+    include("../../tools/cors.php");
+
     $config = json_decode('
         {
             "db": {

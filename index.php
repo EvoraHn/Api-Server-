@@ -7,7 +7,7 @@
     $data = array(
         "server" => array(
             "dsc" => "API Server App Movil 2",
-            "ver" => "0.0.1",
+            "ver" => "0.0.11",
             "usr" => isset($_SESSION['UsrUsr'])?$_SESSION['UsrUsr']:"NO AUTH"
         )
     ); 

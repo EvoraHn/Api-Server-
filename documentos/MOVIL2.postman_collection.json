@@ -1,0 +1,431 @@
+{
+	"info": {
+		"_postman_id": "b12f97cc-3f4d-4ef4-b74a-075899c3196d",
+		"name": "MOVIL2",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Usuarios",
+			"item": [
+				{
+					"name": "Crear Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "UsrUsr",
+									"value": "rmaldonado89",
+									"type": "text"
+								},
+								{
+									"key": "UsrNom",
+									"value": "RAFAEL E. MALDONADO",
+									"type": "text"
+								},
+								{
+									"key": "UsrPwd",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "UsrMail",
+									"value": "remdph@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "UsrTel",
+									"value": "75898789",
+									"type": "text"
+								},
+								{
+									"key": "UsrEst",
+									"value": "ACT",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.53.0.112/api/usuarios/crear.php",
+							"protocol": "http",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"112"
+							],
+							"path": [
+								"api",
+								"usuarios",
+								"crear.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "UsrUsr",
+									"value": "rmaldonado",
+									"description": "Usuario a iniciar sesion",
+									"type": "text"
+								},
+								{
+									"key": "UsrPwd",
+									"value": "movil2",
+									"description": "Contraseña del Usuario",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "10.53.0.55/api/usuarios/login.php",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"55"
+							],
+							"path": [
+								"api",
+								"usuarios",
+								"login.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Usuario",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "UsrNom",
+									"value": "Rafael Editado",
+									"type": "text"
+								},
+								{
+									"key": "UsrTel",
+									"value": "99999999",
+									"type": "text"
+								},
+								{
+									"key": "",
+									"value": "",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.53.0.112/api/usuarios/editar.php",
+							"protocol": "http",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"112"
+							],
+							"path": [
+								"api",
+								"usuarios",
+								"editar.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Colecciones",
+			"item": [
+				{
+					"name": "Crear Coleccion",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ColNom",
+									"value": "Mis vacaciones 3",
+									"type": "text"
+								},
+								{
+									"key": "ColDsc",
+									"value": "Recuerdos de mis Vacaciones 3",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.53.0.55/api/colecciones/crear.php",
+							"protocol": "http",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"55"
+							],
+							"path": [
+								"api",
+								"colecciones",
+								"crear.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Editar Colección",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ColNom",
+									"value": "Mis vacaciones 2 (MODIFICADA) 3",
+									"type": "text"
+								},
+								{
+									"key": "ColDsc",
+									"value": "Recuerdos de mis Vacaciones.",
+									"type": "text"
+								},
+								{
+									"key": "ColCod",
+									"value": "60385081d1094",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.53.0.55/api/colecciones/editar.php",
+							"protocol": "http",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"55"
+							],
+							"path": [
+								"api",
+								"colecciones",
+								"editar.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Eliminar Colección",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ColCod",
+									"value": "60385081d1094",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.53.0.55/api/colecciones/eliminar.php",
+							"protocol": "http",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"55"
+							],
+							"path": [
+								"api",
+								"colecciones",
+								"eliminar.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Listado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": []
+						},
+						"url": {
+							"raw": "http://10.53.0.55/api/colecciones/listado.php",
+							"protocol": "http",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"55"
+							],
+							"path": [
+								"api",
+								"colecciones",
+								"listado.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Obtener Colección",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ColCod",
+									"value": "603852c08ac4d",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.53.0.112/api/colecciones/obtener.php",
+							"protocol": "http",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"112"
+							],
+							"path": [
+								"api",
+								"colecciones",
+								"obtener.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Fotos",
+			"item": [
+				{
+					"name": "Eliminar Foto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "ColCod",
+									"value": "6048218cecdb3",
+									"type": "text"
+								},
+								{
+									"key": "FotCod",
+									"value": "604821fdf2210",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.53.0.55/api/fotos/eliminar.php",
+							"protocol": "http",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"55"
+							],
+							"path": [
+								"api",
+								"fotos",
+								"eliminar.php"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Crear Foto",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "ColCod",
+									"value": "603852c08ac4d",
+									"type": "text"
+								},
+								{
+									"key": "FotFile",
+									"type": "file",
+									"src": "/C:/Users/Rafael Maldonado/OneDrive - cointla.com/Imágenes/linuxmint-19.2-cinnamon-64bit-backgrounds/linuxmint-19.2-cinnamon-64bit-backgrounds/linuxmint/default_background.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://10.53.0.112/api/fotos/crear.php",
+							"protocol": "http",
+							"host": [
+								"10",
+								"53",
+								"0",
+								"112"
+							],
+							"path": [
+								"api",
+								"fotos",
+								"crear.php"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Versio del API",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "10.53.0.112",
+					"host": [
+						"10",
+						"53",
+						"0",
+						"112"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
